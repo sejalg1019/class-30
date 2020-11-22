@@ -75,3 +75,9 @@ function mouseDragged(){
 function mouseReleased(){
     slingshot.fly();
 }
+
+function keyPressed(){
+    if(keyCode===32){ //32 is the ASCII code for the space key
+        slingshot.attach(bird.body); //calling the function and giving an argument
+    }
+}
